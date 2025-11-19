@@ -4,7 +4,7 @@ import PhotoDetailPage from "../pages/PhotoDetailPage";
 
 export default function AppRouter() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route path="/" element={<Navigate to="/photos" />} />
         <Route path="/photos" element={<PhotoListPage />} />
